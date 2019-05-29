@@ -120,7 +120,6 @@ a {
 /***************************************************/
 
 header {
-    /*position: fixed;*/
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -248,7 +247,6 @@ header li a:hover {
     .forside_container a {
         background-color: white;
     }
-
 
     .item-4 {
         grid-column: 4/ span 2;
