@@ -127,14 +127,13 @@ header {
     width: 100vw;
     height: 110px;
     background-color: #EA5045;
-    z-index: 100;
     color: white;
 }
 
 header img {
     position: absolute;
     top: 22px;
-    width: 180px;
+    width: 170px;
     margin: 10px;
 }
 
@@ -142,9 +141,9 @@ header img {
     background-image: url(ikoner/profil-ikon.svg);
     background-size: cover;
     position: absolute;
-    right: 110px;
+    right: 90px;
     top: 37px;
-    padding: 15px;
+    padding: 14px;
 }
 
 /** NAV **/
@@ -156,11 +155,10 @@ header img {
     cursor: pointer;
     font-size: 3rem;
     position: absolute;
-    right: 30px;
+    right: 25px;
     top: 30px;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 #menu {
@@ -563,7 +561,8 @@ footer p {
 
 h1 {
     margin: 20px;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    color: #67657c;
 }
 
 h2 {
@@ -613,3 +612,16 @@ h2 {
 /***************************************************/
 /*** næsteaflevering - næsteaflevering.html ***/
 /***************************************************/
+
+.top_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tilbage_knap {
+    background-image: url(ikoner/tilbage_pil.svg);
+    background-size: cover;
+    height: 7vw;
+    width: 7vw;
+    margin: 20px 0px 0px 20px;
+}
