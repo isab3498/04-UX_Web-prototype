@@ -1,0 +1,615 @@
+/***************************************************/
+/* 1. login siden - index.html */
+/* 2. header og burger menu - forside.html */
+/* 3. forside - forside.html */
+/* 4. skema - skema.html */
+/* 5. modul - modul.html*/
+/***************************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FAF7F7;
+    margin: 0;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/***************************************************/
+/* 1. login siden - index.html */
+/***************************************************/
+
+#login {
+    width: 100%;
+}
+
+.top {
+    background-color: #EA5045;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.top_image {
+    background-image: url(ikoner/kea.svg);
+    background-size: cover;
+    width: 50vw;
+    height: 12.4vw;
+    margin: 50px;
+}
+
+.container {
+    background-color: #FAF7F7;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.formgroup input {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    border: none;
+    padding: 7px 12px;
+}
+
+.glemtpassword {
+    text-align: center;
+    margin-top: 120px
+}
+
+.glemtpassword a {
+    color: gray;
+    font-size: 1.5rem;
+
+}
+
+.formgroup1 input {
+    width: 300px;
+    height: 40px;
+    background-color: #EA5045;
+    border-radius: 25px;
+    margin: 20px 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.formgroup2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 40px;
+    border: 2px solid #EA5045;
+    border-radius: 25px;
+    margin: 0px 20px 10px;
+    color: #EA5045;
+    font-size: 1.5rem;
+}
+
+.facebook_ikon {
+    background-image: url(ikoner/facebook_ikon_svg.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    margin: 8px 27px;
+}
+
+/***************************************************/
+/* 2. header og burger menu - forside.html */
+/***************************************************/
+
+header {
+    /*position: fixed;*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: 110px;
+    background-color: #EA5045;
+    z-index: 100;
+    color: white;
+}
+
+header img {
+    position: absolute;
+    top: 22px;
+    width: 180px;
+    margin: 10px;
+}
+
+#profil_knap {
+    background-image: url(ikoner/profil-ikon.svg);
+    background-size: cover;
+    position: absolute;
+    right: 110px;
+    top: 37px;
+    padding: 15px;
+}
+
+/** NAV **/
+.hidden {
+    display: none;
+}
+
+#menuknap {
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 1;
+}
+
+#menu {
+    padding: 20px 0px;
+    list-style-type: none;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    margin: 0;
+    background-color: #3F3140;
+}
+
+header li {
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3F3140;
+    line-height: 2.4;
+    color: #EA847C;
+}
+
+.log_ud {
+    background-color: #EA847C;
+    line-height: 2.4;
+
+}
+
+.log_ud p {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.log_ud p:hover {
+    color: #3F3140;
+}
+
+header li a:hover {
+    color: white;
+}
+
+/***************************************************/
+/* 3. forside - forside.html */
+/***************************************************/
+
+.forside_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px 110px 110px;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.item-4 {
+    grid-column: 1 / span 2;
+}
+
+.item-11 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
+}
+
+@media screen and (min-width: 1000px) {
+    .forside_container {
+        grid-template-columns: 175px 175px 175px 175px 175px;
+        grid-template-rows: 175px 175px 175px;
+    }
+
+    .forside_container a {
+        background-color: white;
+    }
+
+
+    .item-4 {
+        grid-column: 4/ span 2;
+    }
+
+    .item-11 {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .item-6 {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 2;
+    }
+}
+
+/***************************************************/
+/* 4. skema - skema.html */
+/***************************************************/
+
+.fejl_fyld {
+    height: 110px;
+}
+
+.skema_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #DEDCDB;
+}
+
+.txt1 {
+    font-size: 2rem;
+    margin: 0px 0px 10px;
+    font-weight: bold;
+}
+
+.txt3 {
+    margin: 5px 0px 10px;
+    font-size: 1.6rem;
+    color: #626060;
+    font-weight: bolder;
+}
+
+.txt2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.txt_container1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.txt_container2 {
+    text-align: right;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.dato {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3F3140;
+    justify-content: center;
+}
+
+.dato p {
+    color: white;
+}
+
+.linje1 {
+    font-size: 1.7rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.linje2 {
+    font-size: 1rem;
+    margin: 10px 50px 0px;
+    text-align: center;
+}
+
+.linje3 {
+    font-size: 2rem;
+    margin: 0px 7px 7px 7px;
+    text-align: center;
+}
+
+.pil_v {
+    background-image: url(ikoner/pil_v.svg);
+    width: 6vw;
+    height: 6vw;
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.pil_h {
+    background-image: url(ikoner/pil_h.svg);
+    width: 6vw;
+    height: 6vw;
+    background-size: cover;
+    margin-top: 25px
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: inherit;
+}
+
+td {
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ddd9d9;
+}
+
+.col1 {
+    width: 20vw;
+    height: 11vw;
+    color: #9298b1;
+    font-size: 1.5rem;
+}
+
+.pause {
+    width: 20vw;
+    height: 5vw;
+    background-color: rgba(234, 132, 124, 0.1);
+}
+
+.modul1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ddd9d9;
+    padding: 7px 15px;
+    justify-content: space-between;
+}
+
+.modul2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ddd9d9;
+    padding: 7px 15px;
+    justify-content: space-between;
+}
+
+.farve {
+    background-color: #ddd9d9;
+}
+
+.modul3 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ddd9d9;
+    padding: 7px 15px;
+    justify-content: space-between;
+}
+
+.modul_tekst {
+    flex-basis: 30px;
+    flex-grow: 3;
+    color: black;
+    text-align: left;
+}
+
+.modul_overskrift {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.beskrivelse {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.modul1_ikon2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #ddd9d9;
+    height: 11vw;
+}
+
+.container_til_modulikon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #ddd9d9;
+    height: 11vw;
+}
+
+.container_til_modulikon .ikon_vedlagt {
+    margin: -20px 15px 0px 0px;
+}
+
+.ikon_mappe {
+    background-image: url(ikoner/mappe.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+}
+
+.ikon_vedlagt {
+    background-image: url(ikoner/vedlagt_ikon.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3F3140;
+    padding: 10px;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.skema_ikon {
+    background-image: url(ikoner/skema_ikon.svg);
+    background-size: cover;
+    width: 5.3vw;
+    height: 6vw;
+    margin-right: 20px;
+    margin-top:
+}
+
+/***************************************************/
+/* 5. modul - modul.html*/
+/***************************************************/
+
+#modul_side {
+    margin-bottom: 60px;
+}
+
+.info_tekst {
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.overskrift_modulside {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.beskrivelse_modulside {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.materiale {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #F2F1F0;
+    margin: 10px 30px;
+    padding: 20px;
+    justify-content: space-between;
+    color: black;
+}
+
+.materiale_txt_1 {
+    flex-basis: 300px;
+    flex-grow: 3;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.materiale_txt_2 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.ikon_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.materiale_ikon {
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-image: url(ikoner/download_ikon.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.materiale_ikon_3 {
+    flex-basis: 50px;
+    flex-grow: 1;
+    background-image: url(ikoner/vedlagt_ikon.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+/***************************************************/
+/*** Aflevering - aflevering.html ***/
+/***************************************************/
+
+h1 {
+    margin: 20px;
+    font-size: 2.3rem;
+}
+
+h2 {
+    color: red;
+    margin: 40px 20px 20px;
+    font-size: 1.8rem;
+}
+
+.aflevering_pil {
+    background-image: url(ikoner/pil_h.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(90deg);
+}
+
+.aflevering_upload {
+    background-image: url(ikoner/download_ikon.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(180deg);
+}
+
+.aflevering_vedlagt {
+    background-image: url(ikoner/vedlagt_ikon.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(180deg);
+}
+
+/***************************************************/
+/*** Aflevering1 - aflevering1.html ***/
+/***************************************************/
+
+.af_boks {
+    margin: 0px 30px;
+    border: 1px solid #e6e5e5;
+    padding: 10px;
+}
+
+.af_boks1 {
+    margin: -10px 30px 0px;
+}
+
+/***************************************************/
+/*** næsteaflevering - næsteaflevering.html ***/
+/***************************************************/
